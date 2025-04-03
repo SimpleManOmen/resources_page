@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Calculator Page</h1>
+
+    <h2>Fuel Economy Car Calculator</h2>
+    <p>This will calculate how long it will take to break even on the purchase of a vehicle for the sake of saving money on fuel. The calculator assumes that you will keep both vehicles.</p>
+    <form onsubmit="handle_submit_econo_calculator(event)">
+        <label>
+            Vehicle out the door cost? This includes all taxes, doc fees, etc.
+            <input type="number" name="car_price">
+        </label>
+        <label>
+            MPG of current vehicle?
+            <input type="number" name="current_car_mpg">
+        </label>
+        <label>
+            MPG of new vehicle?
+            <input type="number" name="new_car_mpg">
+        </label>
+        <label>
+            Monthly insurance cost of new vehicle?
+            <input type="number" name="new_car_monthly_insurance">
+        </label>
+        <label>
+            How many miles will you put on the new vehicle, rather than the old, vehicle each month?
+            <input type="number" name="monthly_mileage">
+        </label>
+        <label>
+            Fuel price per gallon?
+            <input type="number" name="fuel_price">
+        </label>
+        <input type="submit" value="Calculate">
+    </form>
+    <p id="months_to_payoff_fuel_economy_vehicle"></p>
+</body>
+</html>
